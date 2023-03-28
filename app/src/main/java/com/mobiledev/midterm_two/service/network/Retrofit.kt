@@ -7,7 +7,7 @@ object RetrofitUtil {
 
     fun getInstance(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(Api.BASE_URL)
+            .baseUrl(UserApi.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
